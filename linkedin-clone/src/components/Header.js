@@ -1,7 +1,7 @@
 import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import "./header.css";
-import HeaderOption from "./components/HeaderOption";
+import HeaderOption from "./HeaderOption";
 import HomeIcon from "@material-ui/icons/Home";
 import PeopleIcon from "@material-ui/icons/People";
 import BusinessCenterTwoToneIcon from "@material-ui/icons/BusinessCenterTwoTone";

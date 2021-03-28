@@ -1,6 +1,7 @@
 import React from "react";
 import "./header_option.css";
 import { Avatar } from "@material-ui/core";
+
 const HeaderOption = ({ avatar, Icon, title }) => {
   return (
     <div className="headerOption">
