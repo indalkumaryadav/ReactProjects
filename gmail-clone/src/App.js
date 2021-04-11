@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import SideBar from "./components/SideBar";
+import { Route, Switch } from "react-router-dom";
+import Mail from "./components/Mail";
+import EmailList from "./components/EmailList";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <div
+        style={{
+          display: "flex",
+          height: "100vh",
+        }}
+      >
+        <SideBar />
+        <Switch>
+          <Route exact path="/mail" component={Mail} />
+          <Route exact path="/" component={EmailList} />
+        </Switch>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
